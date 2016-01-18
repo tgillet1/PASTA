@@ -27,10 +27,10 @@ class PairwiseAlignmentArgumentValidator():
     # Makes sure a fasta file has been provided
     def test_fasta(self):
         if self.args['fasta_file']:
-            if os.path.isfile(self.args['custom']):
+            if os.path.isfile(self.args['fasta_file']):
                 return True
             else:
-                err = 'Fasta file \''+self.args['f']+'\' does not exist.'
+                err = 'Fasta file \''+self.args['fasta_file']+'\' does not exist.'
                 raise IOError(err)
         else:
             err = 'Fasta file [-f] required.'
