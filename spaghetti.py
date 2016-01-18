@@ -5,7 +5,6 @@ user-provided input sequences as a FASTA file.
 
 from parameter import PairwiseAlignmentArgumentValidator, PairwiseAlignmentCommandParser, InputWrapperState
 from pairwise import PairwiseDriver
-from msa import MultipleSequenceDriver, ConsensusFilterFactory
 from random import shuffle
 from score_converter import ScoreConversionDriver
 import os
